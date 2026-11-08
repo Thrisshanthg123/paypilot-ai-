@@ -510,3 +510,7 @@ Our goal is to make digital payments more accessible and secure by combining a s
 
 \### PayPilot AI — Every Payment Deserves Protection.
 
+## Backend service
+
+The FastAPI, database, AI-engine adapter, and PayPal Sandbox module is documented in [backend/README.md](backend/README.md).
+
