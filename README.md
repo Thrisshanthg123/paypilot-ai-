@@ -1,436 +1,512 @@
-# \# PayPilot AI 💳🛡️
+\# PayPilot AI 💳🛡️
 
-# 
 
-# \### Smarter Payments. Safer Transactions.
 
-# 
+\### Smarter Payments. Safer Transactions.
 
-# PayPilot AI is an AI-powered payment safety application designed to make digital payments easier, smarter, and safer.
 
-# 
 
-# It combines a familiar UPI-style payment experience with AI-assisted transaction risk analysis to help users identify potentially suspicious payments before completing a transaction.
+PayPilot AI is an AI-powered payment safety application designed to make digital payments easier, smarter, and safer.
 
-# 
 
-# \---
 
-# 
+It combines a familiar UPI-style payment experience with AI-assisted transaction risk analysis to help users identify potentially suspicious payments before completing a transaction.
 
-# \## 🚀 Key Features
 
-# 
 
-# \### 1. Digital Payments
+\---
 
-# \- Scan \& Pay
 
-# \- Pay using mobile number
 
-# \- Pay using UPI ID
+\## 🚀 Key Features
 
-# \- Bank account transfers
 
-# \- Self transfer
 
-# \- Check balance
+\### 1. Digital Payments
 
-# 
+\- Scan \& Pay
 
-# \### 2. AI-Powered Payment Risk Analysis
+\- Pay using mobile number
 
-# \- Pre-payment risk assessment.
+\- Pay using UPI ID
 
-# \- Risk score from 0–100.
+\- Bank account transfers
 
-# \- Low, Medium, and High risk classifications.
+\- Self transfer
 
-# \- Fraud warning indicators.
+\- Check balance
 
-# \- Recommendations before proceeding with a payment.
 
-# 
 
-# \### 3. Transaction Management
+\### 2. AI-Powered Payment Risk Analysis
 
-# \- Transaction history.
+\- Pre-payment risk assessment interface.
 
-# \- Sent and received payment filters.
+\- Risk score from 0–100.
 
-# \- Success, pending, and failed transaction statuses.
+\- Low, Medium, and High risk classifications.
 
-# \- Transaction details and receipts.
+\- Fraud warning indicators.
 
-# 
+\- Recommendations before proceeding with a payment.
 
-# \### 4. Bill Payments
 
-# \- Mobile recharge
 
-# \- Electricity
+\### 3. Transaction Management
 
-# \- DTH
+\- Transaction history.
 
-# \- FASTag
+\- Sent and received payment filters.
 
-# \- Water
+\- Success, pending, and failed transaction statuses.
 
-# \- Broadband
+\- Transaction details and receipts.
 
-# \- Gas
 
-# \- Credit card bills
 
-# 
+\### 4. Bill Payments
 
-# \### 5. Additional Features
+\- Mobile recharge
 
-# \- QR scanner simulator.
+\- Electricity
 
-# \- Recent contacts.
+\- DTH
 
-# \- Rewards dashboard.
+\- FASTag
 
-# \- User profile.
+\- Water
 
-# \- Notifications.
+\- Broadband
 
-# 
+\- Gas
 
-# \---
+\- Credit card bills
 
-# 
 
-# \## 🧠 AI Integration
 
-# 
+\### 5. Additional Features
 
-# PayPilot AI is designed to assess payment risk before a transaction is completed.
+\- QR scanner simulator.
 
-# 
+\- Recent contacts.
 
-# The risk-analysis experience includes:
+\- Rewards dashboard.
 
-# 
+\- User profile.
 
-# 1\. Transaction information is collected.
+\- Notifications.
 
-# 2\. Risk indicators are evaluated.
 
-# 3\. A risk score is generated.
 
-# 4\. The transaction is classified as Low, Medium, or High risk.
+\---
 
-# 5\. A recommendation is presented to the user.
 
-# 
 
-# The frontend currently provides the risk-analysis interface. Actual AI inference and backend integration depend on the connected backend implementation.
+\## 🖼️ Application Screenshots
 
-# 
 
-# \---
 
-# 
+Screenshots can be added to the `screenshots/` folder.
 
-# \## 💳 PayPal Integration
 
-# 
 
-# PayPilot AI is being developed with PayPal Sandbox integration as part of its payment infrastructure.
+Suggested screenshots:
 
-# 
 
-# The intended integration supports testing payment workflows without using real money.
 
-# 
+| Screen | Screenshot |
 
-# \*\*Note:\*\* Actual PayPal API connectivity and transaction processing must be verified against the backend implementation before being considered complete.
+|---|---|
 
-# 
+| Home Dashboard | `screenshots/home.png` |
 
-# \---
+| Payment Risk Analysis | `screenshots/ai-risk-analysis.png` |
 
-# 
+| Payment Result | `screenshots/payment-result.png` |
 
-# \## 🛠️ Technology Stack
+| Transaction History | `screenshots/transaction-history.png` |
 
-# 
+| Profile | `screenshots/profile.png` |
 
-# \### Frontend
 
-# \- React 19
 
-# \- Vite
+Add screenshots to this section as they become available.
 
-# \- JavaScript
 
-# \- CSS
 
-# \- React Router
+\---
 
-# \- Lucide React
 
-# \- Recharts
 
-# 
+\## 🧠 AI-Powered Payment Risk Analysis
 
-# \### Development Tools
 
-# \- Visual Studio Code
 
-# \- Git
+PayPilot AI is designed to assess payment risk before a transaction is completed.
 
-# \- GitHub
 
-# \- npm
 
-# 
+The risk-analysis experience includes:
 
-# \### Integration
 
-# \- PayPal Sandbox
 
-# \- AI-powered payment risk analysis
+1\. Transaction information is collected.
 
-# 
+2\. Risk indicators are evaluated.
 
-# \---
+3\. A risk score is generated.
 
-# 
+4\. The transaction is classified as Low, Medium, or High risk.
 
-# \## ⚙️ Installation and Setup
+5\. A recommendation is presented to the user.
 
-# 
 
-# \### Prerequisites
 
-# \- Node.js
+The frontend currently provides the risk-analysis interface. Actual AI inference and backend integration must be verified against the connected backend implementation.
 
-# \- npm
 
-# \- Git
 
-# 
+\---
 
-# \### 1. Clone the repository
 
-# 
 
-# ```bash
+\## 🏗️ System Architecture
 
-# git clone https://github.com/Thrisshanthg123/paypilot-ai-.git
 
-# ```
 
-# 
+The intended architecture separates the user interface, backend services, AI risk analysis, and payment processing.
 
-# \### 2. Navigate to the frontend project
 
-# 
 
-# ```bash
+```mermaid
 
-# cd paypilot-ai-
+flowchart TD
 
-# ```
+&#x20;   A\[User] --> B\[PayPilot AI Frontend]
 
-# 
+&#x20;   B --> C\[Backend API]
 
-# \### 3. Switch to the frontend branch
+&#x20;   C --> D\[AI Payment Risk Engine]
 
-# 
+&#x20;   C --> E\[PayPal Sandbox]
 
-# ```bash
+&#x20;   D --> F\[Risk Score and Recommendation]
 
-# git checkout frontend
+&#x20;   E --> G\[Payment Response]
 
-# ```
+&#x20;   F --> H\[Frontend Result]
 
-# 
+&#x20;   G --> H
 
-# \### 4. Install dependencies
+&#x20;   H --> I\[Transaction History]
 
-# 
+```
 
-# ```bash
 
-# npm install
 
-# ```
+\*This diagram represents the intended system architecture. Actual connections should be confirmed against the implemented backend.\*
 
-# 
 
-# \### 5. Start the development server
 
-# 
+\---
 
-# ```bash
 
-# npm run dev
 
-# ```
+\## 💳 PayPal Sandbox Integration
 
-# 
 
-# \### 6. Open in your browser
 
-# 
+PayPilot AI is being developed with PayPal Sandbox integration as part of its payment infrastructure.
 
-# ```text
 
-# http://localhost:5173
 
-# ```
+The intended integration supports testing payment workflows without using real money.
 
-# 
 
-# \---
 
-# 
+\*\*Integration status:\*\* Actual PayPal API connectivity and transaction processing must be verified against the backend implementation before being considered complete.
 
-# \## 🏗️ Project Structure
 
-# 
 
-# ```text
+\---
 
-# PayPilot-AI/
 
-# │
 
-# ├── public/
+\## 🛠️ Technology Stack
 
-# │
 
-# ├── src/
 
-# │   ├── components/
+\### Frontend
 
-# │   │   ├── TopHeader.jsx
+\- React 19
 
-# │   │   ├── QuickTransferGrid.jsx
+\- Vite
 
-# │   │   ├── PeopleAndContacts.jsx
+\- JavaScript
 
-# │   │   ├── BillServicesGrid.jsx
+\- CSS
 
-# │   │   ├── UpiPaymentModal.jsx
+\- React Router
 
-# │   │   ├── ScanQrModal.jsx
+\- Lucide React
 
-# │   │   ├── TransactionHistoryView.jsx
+\- Recharts
 
-# │   │   ├── RewardsView.jsx
 
-# │   │   ├── ProfileView.jsx
 
-# │   │   └── BottomNav.jsx
+\### Development Tools
 
-# │   │
+\- Visual Studio Code
 
-# │   ├── data/
+\- Git
 
-# │   │   └── mockData.js
+\- GitHub
 
-# │   │
+\- npm
 
-# │   ├── App.jsx
 
-# │   ├── App.css
 
-# │   └── index.css
+\### Planned / Intended Integrations
 
-# │
+\- PayPal Sandbox
 
-# ├── index.html
+\- AI-powered payment risk analysis
 
-# ├── package.json
 
-# ├── vite.config.js
 
-# └── README.md
+\---
 
-# ```
 
-# 
 
-# \---
+\## ⚙️ Installation and Setup
 
-# 
 
-# \## 🔒 Security
 
-# 
+\### Prerequisites
 
-# \- Payment risk warnings before proceeding.
+\- Node.js
 
-# \- Demo payment PIN interface.
+\- npm
 
-# \- No real UPI PIN collection in the frontend demo.
+\- Git
 
-# \- Sandbox-based payment testing is intended to avoid real-money transactions.
 
-# 
 
-# \---
+\### 1. Clone the repository
 
-# 
 
-# \## 🧪 Development
 
-# 
+```bash
 
-# Run the following commands:
+git clone https://github.com/Thrisshanthg123/paypilot-ai-.git
 
-# 
+```
 
-# ```bash
 
-# npm run dev
 
-# ```
+\### 2. Navigate to the project
 
-# 
 
-# Build the production frontend:
 
-# 
+```bash
 
-# ```bash
+cd paypilot-ai-
 
-# npm run build
+```
 
-# ```
 
-# 
 
-# Run lint checks:
+\### 3. Switch to the frontend branch
 
-# 
 
-# ```bash
 
-# npm run lint
+```bash
 
-# ```
+git checkout frontend
 
-# 
+```
 
-# \---
 
-# 
 
+\### 4. Install dependencies
 
 
-# \## 🎯 Project Goal
 
-# 
+```bash
 
-# Our goal is to make digital payments more accessible and secure by combining a simple payment experience with intelligent transaction-risk assessment.
+npm install
 
-# 
+```
 
-# \*\*PayPilot AI — Every Payment Deserves Protection.\*\*
+
+
+\### 5. Start the development server
+
+
+
+```bash
+
+npm run dev
+
+```
+
+
+
+\### 6. Open in your browser
+
+
+
+```text
+
+http://localhost:5173
+
+```
+
+
+
+\---
+
+
+
+\## 📁 Frontend Project Structure
+
+
+
+```text
+
+PayPilot-AI/
+
+│
+
+├── public/
+
+│
+
+├── src/
+
+│   ├── components/
+
+│   │   ├── TopHeader.jsx
+
+│   │   ├── QuickTransferGrid.jsx
+
+│   │   ├── PeopleAndContacts.jsx
+
+│   │   ├── BillServicesGrid.jsx
+
+│   │   ├── UpiPaymentModal.jsx
+
+│   │   ├── ScanQrModal.jsx
+
+│   │   ├── TransactionHistoryView.jsx
+
+│   │   ├── RewardsView.jsx
+
+│   │   ├── ProfileView.jsx
+
+│   │   └── BottomNav.jsx
+
+│   │
+
+│   ├── data/
+
+│   │   └── mockData.js
+
+│   │
+
+│   ├── App.jsx
+
+│   ├── App.css
+
+│   └── index.css
+
+│
+
+├── index.html
+
+├── package.json
+
+├── vite.config.js
+
+└── README.md
+
+```
+
+
+
+\---
+
+
+
+\## 🔒 Security
+
+
+
+\- Payment risk warnings before proceeding.
+
+\- Demo payment PIN interface.
+
+\- No real UPI PIN collection in the frontend demo.
+
+\- Sandbox-based payment testing is intended to avoid real-money transactions.
+
+
+
+\---
+
+
+
+\## 🧪 Development Commands
+
+
+
+Start development server:
+
+
+
+```bash
+
+npm run dev
+
+```
+
+
+
+Build production frontend:
+
+
+
+```bash
+
+npm run build
+
+```
+
+
+
+Run lint checks:
+
+
+
+```bash
+
+npm run lint
+
+```
+
+
+
+\---
+
+
+
+\## 🎯 Project Goal
+
+
+
+Our goal is to make digital payments more accessible and secure by combining a simple payment experience with intelligent transaction-risk assessment.
+
+
+
+\### PayPilot AI — Every Payment Deserves Protection.
 
